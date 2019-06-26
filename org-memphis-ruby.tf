@@ -4,9 +4,12 @@ terraform {
 
 provider "github" {
   organization = "MemphisRuby"
+	alias = "memphis-ruby"
 }
 
 resource "github_repository" "memphis_ruby_api" {
+	provider = "github.memphis-ruby"
+
 	name = "memphis_ruby_api"
 
 	homepage_url = "api.memphisruby.org"
@@ -18,6 +21,8 @@ resource "github_repository" "memphis_ruby_api" {
 }
 
 resource "github_membership" "memphis_ruby-dpritchett" {
+	provider = "github.memphis-ruby"
+
 	username = "dpritchett"
 	role = "admin"
 }

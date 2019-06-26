@@ -1,6 +1,8 @@
 # tf stuff
 .terraform
 *tfstate*
+tf.plan
+tfplan
 
 # local env vars
 .envrc
