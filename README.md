@@ -26,7 +26,7 @@ Managing non-sensitive GitHub configuration via terraform makes your GitHub sett
 
 **After infrastructure-as-code**
 
-([See this on a real PR!](https://github.com/dpritchett/repo-config-management/pull/1))
+([See this in action on a real PR!](https://github.com/dpritchett/repo-config-management/pull/1))
 
 > You: Hey Daniel. Here's a PR raising the number of required approvals for `master` from 1 to 2 per our policy. It looks like this one branch was overlooked the last time we checked these. Please merge and apply this `terraform` change to sort it out.
 
@@ -44,6 +44,8 @@ Managing non-sensitive GitHub configuration via terraform makes your GitHub sett
 > You: Thanks!
 
 **After infrastructure-as-code**
+
+([See this in action on a real PR!](https://github.com/dpritchett/repo-config-management/pull/2))
 
 > You: Hey Daniel. I need to push a change to the `cool-hacks` repo but it looks like Bob changed it to be read-only last month. Can you please merge and apply this PR to make it writeable again? Thanks!
 
