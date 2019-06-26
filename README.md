@@ -8,7 +8,9 @@ Infrastructure-as-code configuration management for some of the public GitHub re
 
 Managing non-sensitive GitHub configuration via terraform makes your GitHub settings viewable by users who don't need admin accounts. This makes for much quicker customer service and less time asking admin users to look things up.
 
-#### Before infrastructure-as-code
+#### Scenario: Non-admin user wants to tweak branch protections
+
+##### Before infrastructure-as-code
 
 > You: Hey Daniel what are the branch protections for branch X? I was hoping to ask you to change them.
 
@@ -24,7 +26,7 @@ Managing non-sensitive GitHub configuration via terraform makes your GitHub sett
 
 > You: Ok great, thanks.
 
-### After infrastructure-as-code
+##### After infrastructure-as-code
 
 You see the problem, locate the relevant config file, and submit a documented PR requesting the change.
 
@@ -35,7 +37,11 @@ I merge the PR and apply the change locally using the privileged access you don'
 
 ### Detailed automated change auditing and rollbacks
 
-#### Before infrastructure-as-code
+When all of your config changes are done through a `git` repo, tracking who changed what (and when, and why) becomes very straightforward. This makes for more empowered and informed end users.
+
+#### Scenario: Non-admin user wants to make a repository writeable for their user group
+
+##### Before infrastructure-as-code
 
 > You: Hey Daniel. I noticed the `cool-hacks` repo has been set to read-only even though we still need to use it. Can you help me figure out why it was changed and help me make it writeable again?
 
@@ -43,7 +49,7 @@ I merge the PR and apply the change locally using the privileged access you don'
 
 > You: Thanks!
 
-#### After infrastructure-as-code
+##### After infrastructure-as-code
 
 You see the problem, click through to figure out who introduced it and when, and submit a documented PR to correct it.
 
