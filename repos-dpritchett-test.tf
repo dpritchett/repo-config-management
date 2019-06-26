@@ -46,5 +46,5 @@ resource "github_team_repository" "dpritchett-test_team_repository_cool-hacks" {
 
   team_id    = "${github_team.dpritchett-test-developers.id}"
   repository = "${github_repository.dpritchett-test_repo_cool-hacks.name}"
-  permission = "pull"
+  permission = "push"
 }
