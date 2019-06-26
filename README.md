@@ -35,6 +35,7 @@ You see the problem, locate the relevant config file, and submit a documented PR
 I merge the PR and apply the change locally using the privileged access you don't need.
 
 [![Screenshot of PR #1](img/raise-approver-count.png)](https://github.com/dpritchett/repo-config-management/pull/1)
+
 ([Link to PR](https://github.com/dpritchett/repo-config-management/pull/1))
 
 ### 2. Detailed automated change auditing and rollbacks
@@ -58,6 +59,7 @@ You see the problem, click through to figure out who introduced it and when, and
 I merge the PR and apply the change locally using the privileged access you don't need.
 
 [![Screenshot of PR #2](img/make-repo-writeable.png)](https://github.com/dpritchett/repo-config-management/pull/2)
+
 ([Link to PR](https://github.com/dpritchett/repo-config-management/pull/2))
 
 ## HOWTOS
