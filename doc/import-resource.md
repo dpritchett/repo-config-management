@@ -2,7 +2,7 @@
 
 ## Import an existing repo
 
-1. Add the repo as a new resource in a `.tf` file:
+### 1. Add the repo as a new resource in a `.tf` file:
 ```tf
 # ./memphis-ruby.tf
 
@@ -19,7 +19,7 @@ resource "github_repository" "memphis_ruby_api" {
 }
 ```
 
-2. Import the resource at the CLI
+### 2. Import the resource at the CLI
 
 Format: `terraform import resource_name repo_slug`
 
@@ -36,7 +36,7 @@ The resources that were imported are shown above. These resources are now in
 your Terraform state and will henceforth be managed by Terraform.
 ```
 
-3. Run `terraform plan` to see what additional config you'll need to transcribe to your new `.tf` file:
+### 3. Run `terraform plan` to see what additional config you'll need to transcribe to your new `.tf` file:
 
 ```console
 terraform plan
@@ -54,7 +54,7 @@ terraform plan
 Plan: 0 to add, 1 to change, 0 to destroy.
 ```
 
-4. Add config to catch up to the live state.
+### 4. Add config to catch up to the live state.
 
 ```tf
 resource "github_repository" "memphis_ruby_api" {
@@ -69,7 +69,7 @@ resource "github_repository" "memphis_ruby_api" {
 }
 ```
 
-5. Confirm there is no diff and then commit your `.tf` change.
+### 5. Confirm there is no diff and then commit your `.tf` change.
 
 ```console
 > terraform plan
@@ -83,3 +83,5 @@ github_repository.memphis_ruby_api: Refreshing state... (ID: memphis_ruby_api)
 
 No changes. Infrastructure is up-to-date.
 ```
+
+### Done!
