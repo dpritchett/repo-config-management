@@ -16,3 +16,8 @@ resource "github_repository" "memphis_ruby_api" {
 	has_issues = "true"
 	has_wiki = "true"
 }
+
+resource "github_membership" "memphis_ruby-dpritchett" {
+	username = "dpritchett"
+	role = "admin"
+}

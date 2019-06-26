@@ -3,7 +3,7 @@
 ## Import an existing repo
 
 1. Add the repo as a new resource in a `.tf` file:
-```hcl
+```tf
 # ./memphis-ruby.tf
 
 terraform {
