@@ -4,7 +4,7 @@ Infrastructure-as-code configuration management for some of the public GitHub re
 
 ![screenshot of terraform code for managing team access to a repository and branch protections](img/terraform-code-sample.png) 
 
-## Why?
+## Big Reasons for Managing Repositories with Code
 
 ### Transparency and improved customer service outcomes
 
