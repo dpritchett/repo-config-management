@@ -24,7 +24,7 @@ resource "github_branch_protection" "protect-demo-repo-master" {
   enforce_admins = true
 
   required_pull_request_reviews {
-    required_approving_review_count = 2
+    required_approving_review_count = 1
     dismiss_stale_reviews           = true
   }
 
