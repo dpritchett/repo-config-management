@@ -62,6 +62,34 @@ I merge the PR and apply the change locally using the privileged access you don'
 
 ([Link to PR](https://github.com/dpritchett/repo-config-management/pull/2))
 
+### 3. Centralized tracking of membership and access levels
+
+#### Scenario: New user joins the team and needs to be granted appropriate GitHub access
+
+##### Before infrastructure-as-code
+
+> You, via email: Hey Daniel. Sean has recently agreed to join our team and we'd like to get him set up with access to our GitHub organization. Can you set that up for us?
+
+> Me: Done! Welcome, Sean!
+
+... ten minutes later ...
+
+> You: Hey Daniel. It looks like Sean's been added to our GitHub org, thank you. He also needs to be a member of the `developers` team. I forgot to mention that!
+
+... two minutes later ...
+
+> Me: No problem! Added.
+
+##### After infrastructure-as-code
+
+On Sean's first day you pair with him on building and submitting the PR that grants his acccess to the organization and to relevant GitHub teams.
+
+I merge the PR and apply the change locally using the privileged access you don't need.
+
+[![Screenshot of PR #3](img/add-new-user.png)](https://github.com/dpritchett/repo-config-management/pull/3)
+
+([Link to PR](https://github.com/dpritchett/repo-config-management/pull/3))
+
 ## HOWTOS
 
 - [Import an existing repo](./doc/import-resource.md)
