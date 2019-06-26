@@ -4,9 +4,29 @@ terraform {
 
 provider "github" {
   organization = "dpritchett-test"
+  alias        = "dpritchett-test"
 }
 
-resource "github_membership" "dpritchett" {
-	username = "dpritchett"
-	role = "admin"
+resource "github_membership" "dpritchett-test-dpritchett" {
+  provider = "github.dpritchett-test"
+
+  username = "dpritchett"
+  role     = "admin"
+}
+
+resource "github_team" "dpritchett-test-developers" {
+  provider = "github.dpritchett-test"
+
+  description = "Developers of dpritchett-test repos"
+  name        = "developers"
+  privacy     = "closed"
+}
+
+resource github_team_membership "dpritchett-test-developers-dpritchett" {
+  provider = "github.dpritchett-test"
+
+  username = "dpritchett"
+  team_id  = "${github_team.dpritchett-test-developers.id}"
+
+  role = "maintainer"
 }
