@@ -30,3 +30,10 @@ resource github_team_membership "dpritchett-test-developers-dpritchett" {
 
   role = "maintainer"
 }
+
+resource "github_membership" "dpritchett-test-kitschysynq" {
+  provider = "github.dpritchett-test"
+
+  username = "kitschysynq"
+  role     = "member"
+}
