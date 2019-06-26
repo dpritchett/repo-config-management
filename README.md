@@ -1,6 +1,8 @@
-# repo-config-management
+# Manage and configure GitHub repositories and user acccess with Terraform
 
 Infrastructure-as-code configuration management for some of the public GitHub resources I administer.
+
+![screenshot of terraform code for managing team access to a repository and branch protections](img/terraform-code-sample.png) 
 
 ## Why?
 
