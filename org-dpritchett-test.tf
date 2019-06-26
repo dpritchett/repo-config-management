@@ -37,3 +37,12 @@ resource "github_membership" "dpritchett-test-kitschysynq" {
   username = "kitschysynq"
   role     = "member"
 }
+
+resource github_team_membership "dpritchett-test-developers-kitschysynq" {
+  provider = "github.dpritchett-test"
+
+  username = "${github_membership.dpritchett-test-kitschysynq.username}"
+  team_id  = "${github_team.dpritchett-test-developers.id}"
+
+  role = "member"
+}
