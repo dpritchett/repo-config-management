@@ -6,7 +6,7 @@ Infrastructure-as-code configuration management for some of the public GitHub re
 
 ## Big Reasons for Managing Repositories with Code
 
-### Transparency and improved customer service outcomes
+### 1. Transparency and improved customer service outcomes
 
 Managing non-sensitive GitHub configuration via terraform makes your GitHub settings viewable by users who don't need admin accounts. This makes for much quicker customer service and less time asking admin users to look things up.
 
@@ -37,7 +37,7 @@ I merge the PR and apply the change locally using the privileged access you don'
 [![Screenshot of PR #1](img/raise-approver-count.png)](https://github.com/dpritchett/repo-config-management/pull/1)
 ([Link to PR](https://github.com/dpritchett/repo-config-management/pull/1))
 
-### Detailed automated change auditing and rollbacks
+### 2. Detailed automated change auditing and rollbacks
 
 When all of your config changes are done through a `git` repo, tracking who changed what (and when, and why) becomes very straightforward. This makes for more empowered and informed end users.
 
