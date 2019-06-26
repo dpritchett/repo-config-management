@@ -11,3 +11,6 @@ tfplan
 *.swo
 *.swp
 *~
+
+# Mac
+.DS_Store
